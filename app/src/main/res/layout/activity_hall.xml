@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xte.xte.Hall"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/Lst_Hall"
+                android:background="#fff"/>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+                android:layout_weight="8"
+                android:background="@drawable/layuot_bg_gradiant"
+                tools:ignore="NestedWeights"
+                android:layout_height="70dp">
+
+
+
+
+                <Button
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/Btn_GuysDialog"
+                    android:background="@drawable/online_guys"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp" />
+
+                <TextView
+                    android:text="9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/Btn_GuysDialog"
+                    android:layout_toEndOf="@+id/Btn_GuysDialog"
+                    android:id="@+id/Txt_NumberOfOnlineGus"
+                    android:layout_marginLeft="5dp"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textColor="#000" />
+
+
+                <TextView
+                    android:text="Mohammad Reza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Txt_FullName"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="27"
+            android:background="#bbb">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/Edt_message"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:layout_margin="5dp"
+                android:hint="@string/your_text_here"
+                tools:ignore="NestedWeights" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Btn_Send"
+                android:layout_weight="4.5"
+                android:elevation="1dp"
+                android:background="#fff"
+                android:text="@string/send"
+                android:textColor="#00aaff"
+                tools:ignore="UnusedAttribute"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

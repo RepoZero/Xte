@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_get_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xte.xte.GetName"
+    android:padding="0dp"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UnknownIdInLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center">
+
+        <TextView
+            android:text="XTE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xte_text"
+            android:textSize="127sp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_marginBottom="27dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginBottom="97dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="70dp">
+
+        <EditText
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:padding="7dp"
+            android:id="@+id/Edt_Name"
+            android:hint="@string/name"
+            android:maxLength="17"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-condensed"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            tools:ignore="ObsoleteLayoutParam,UnusedAttribute"
+            android:layout_height="70dp" />
+
+        <Button
+            android:text="Login"
+            android:id="@+id/Btn_Login"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal|bold"
+            android:textColor="#2b53ff"
+            android:layout_marginBottom="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="3"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
